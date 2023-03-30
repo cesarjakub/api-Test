@@ -82,17 +82,17 @@ $(document).ready(() => {
 
     $("#like").click(function() {
         a.addFact(ids[id]);
-        $(".anim").animate({
-            left: '100px',
-            right: '100px'
+        $(".l").animate({
+            opacity: .5,
+            opacity: 1
         })
         console.log("liked");
     });
     $("#dislike").click(function() {
         b.addFact(ids[id]);
-        $("#coinFact").animate({
-            left: '-100px',
-            right: '-100px'
+        $(".d").animate({
+            opacity: .5,
+            opacity: 1
         });
         console.log("disliked");
     });
